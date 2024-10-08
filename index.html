@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARAZ</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0a49fdadb1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- top -->
+
+    <nav class="bg-red-800 sticky top-0 z-50">
+        <section class="top">
+            <ul class="flex justify-end items-start top-1">
+                <!-- Modal toggle -->
+                <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+                    class="px-6 text-white text-sm" type="button">
+                    Save More on App
+                </button>
+                <!-- Main modal -->
+                <div id="default-modal" tabindex="-1" aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative p-4 w-full max-w-2xl max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                            <!-- Modal header -->
+                            <div
+                                class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                <button type="button"
+                                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                    data-modal-hide="default-modal">
+                                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                    </svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+
+                            <div class="p-4 md:p-5 space-y-4">
+                                <h1>Download the App</h1>
+                                <img src="https://gw.alicdn.com/imgextra/i1/O1CN01EJwZkh1TCWAEThhF0_!!6000000002346-0-tps-150-150.jpg"
+                                    alt="">
+                            </div>
+                            <!-- Modal footer -->
+                        </div>
+                    </div>
+                </div>
+                <li class="px-6"><a href="" class="text-white text-sm">Become a Seller</a></li>
+                <li class="px-6"><a href="" class="text-white text-sm">Help & Support</a></li>
+                <li class="px-6"><a href="" class="text-white text-sm">Login</a></li>
+                <li class="px-6"><a href="" class="text-white text-sm">Sign Up</a></li>
+                <li class="px-6"><a href="" class="text-white text-sm">ভাষা</a></li>
+            </ul>
+        </section>
+
+
+        <section class="flex mt-5 p-3 top-1">
+            <div class="px-11">
+                <a href=""><img src="./images/images (1).png"
+                        width="50px" height="20px" alt="" class="rounded-full"></a>
+            </div>
+            <div class="top-1">
+                <button class="px-11 text-start border-0"><input type="search" class="px-64 border-0 int"
+                        placeholder="search in E-Shop"></button>
+            </div>
+            <div class="text-gray-50 text-2xl">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </section>
+    </nav>
+
+
+    <!-- top-1 -->
+    <section class="flex">
+
+
+        <div id="default-carousel" class="relative w-full test-2" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://img.lazcdn.com/us/domino/db810173-10ba-4ca0-9681-134a5bf4ec1a_BD-1976-688.jpg_2200x2200q80.jpg_.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://img.lazcdn.com/us/domino/c2540899-491a-49d8-aa78-c0f3eb6dd355_BD-1976-688.jpg_2200x2200q80.jpg_.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://img.lazcdn.com/us/domino/9a636182-13bb-4275-9a26-6a875e9c1864_BD-1976-688.jpg_2200x2200q80.jpg_.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://img.lazcdn.com/us/domino/86b18568-1053-4bc1-82f3-631d0de829f1_BD-1976-688.jpg_2200x2200q80.jpg_.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://img.lazcdn.com/us/domino/23b54374-4d85-4f4e-ab32-c96b825e705d_BD-1976-688.jpg_2200x2200q80.jpg_.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 6 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://img.lazcdn.com/us/domino/820b3161-975b-4a3c-8b93-56841c73c899_BD-1976-688.jpg_2200x2200q80.jpg_.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 7 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://img.lazcdn.com/us/domino/12dfcabb-afbb-4922-929e-2c0b8a53b20a_BD-1976-688.jpg_2200x2200q80.jpg_.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 8 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://img.lazcdn.com/us/domino/12dfcabb-afbb-4922-929e-2c0b8a53b20a_BD-1976-688.jpg_2200x2200q80.jpg_.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="5"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="6"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="7"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+
+        <div class="bg-orange-100">
+            <div class="flex">
+                <div class="px-3">
+                    <img src="./images/images (1).png"
+                        alt="" width="50px" height="20px" class="rounded-full mt-1">
+                </div>
+                <h6 class="text-center text-gray-500 p-2 text-sm">Download App</h6>
+            </div>
+           <div class="best-1 mt-3">
+            <div class="best">
+              <div>
+                <h1 class="text-sm text-white">
+                    4.8 Rated
+                </h1>
+                <h1 class="text-sm text-white text-center">Download App</h1>
+                <div>
+                  <div class="flex justify-center mt-2">
+                    <img src="https://img.lazcdn.com/g/tps/imgextra/i2/O1CN01n3PMa828kJZVuCbPp_!!6000000007970-2-tps-72-72.png_2200x2200q80.png_.webp" height="20px" width="30px" alt="">
+                    <h2 class="px-1 text-white">Free Delivery</h2>
+                  </div>
+                </div>
+                  <div class="flex justify-center mt-2">
+                    <img src="https://img.lazcdn.com/g/tps/imgextra/i3/O1CN01J03SMW1lebTE7xkaN_!!6000000004844-2-tps-72-72.png_2200x2200q80.png_.webp" height="20px" width="30px" alt="">
+                    <h2 class="px-1 text-white">Limited Times</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-around">
+                <div class="m-2 text-center">
+                    <img src="https://img.drz.lazcdn.com/g/tps/imgextra/i1/O1CN01EJwZkh1TCWAEThhF0_!!6000000002346-0-tps-150-150.jpg_2200x2200q80.jpg_.webp" alt="" class="text-center " height="60%">
+
+                </div>
+                <div class="mt-11">
+                    <img src="./images/images.png" alt="" width="80px" height="50px">
+                </div>
+            </div>
+            <h1 class="text-center text-red-700">Download App</span>
+            </div>
+           </div>
+        </div>
+
+    </section>
+
+
+    <section class="bg-slate-100 top-2 p-3">
+
+
+        <h1 class="m-5 text-2xl">Flash Sale</h1>
+        <div class="bg-white">
+            <div class="flex justify-between m-5 border-b">
+                <h3 class="text-orange-500 p-5">On Sale now</h3>
+                <button class="try m-3">SHOP ALL PRODUCTS</button>
+            </div>
+            <div class="flex justify-center test-1">
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/47593a1e3f656dede2f1a0842dd903b8.jpg_400x400q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>Women's Tight-Fitting <br> Corset Strap, Fashionable</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/6880148e5d2f1976fd553149bb7e449d.jpg_400x400q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>Today's easiest and most <br> effective fishing trap -</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/g/kf/Sa7c28b83e93a4b89b89144c455f4e9c11.jpg_400x400q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>Airpods Pro /Tws wireless <br> Bluetooth Earbuds</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/g/kf/Sf1186f1e4a1b4f26a466d59b895ad2ebh.jpg_400x400q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>Creative LED Note Board <br> Night Light USB</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/6f72f4f1f8ee9fb4edb6c8d3f4481e9e.jpg_400x400q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>Pond’s Super Light Gel <br> Moisturiser 98g</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/a7e59762d40b37948163688cdf3acfac.jpg_400x400q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2 hover:shadow-2xl">
+                        <h1>Chia Seed Chia Seeds <br> - 500gm Jar</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-5 text-2xl">
+            <h1>Categories</h1>
+        </div>
+
+
+        <div class="flex justify-center test-1">
+            <div class="bg-white hover:shadow-2xl  border-b border-r">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/bb93f0f5b55cb0abc4eaadd483f7aad0.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Ankle Boots</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white hover:shadow-2xl border-b border-r">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/f1d1b036c996f05ba4ca29057a6b67c7.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Board Games</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white hover:shadow-2xl  border-b border-r">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/54ffcfa656984ea75464f4d770ce6834.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Bath Towals</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/e62b3b5b96cb274842a6a16b0b160c83.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Kittchen Fittings</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/g/kf/S63a851da34a64acaaff047414d8fa84fN.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Plastic</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/e9e2470ba98933b2eefc3a4bfef04b41.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Bathrobes</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/0e75ffeca614ff465beb080f6bf46325.png_170x170q80.png_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Pillows</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/ef2cfba6b112d1323f911ddea63a4a1e.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Wormers</h1>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="flex justify-center test-1">
+            <div class="bg-white hover:shadow-2xl  border-b border-r">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/2462a7c3d92a0a08f1cb1a0df7c9aee7.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Routers</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white hover:shadow-2xl border-b border-r">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/ea6999d4f9e0a433dfff06c9c08cb351.png_170x170q80.png_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Lame Shade</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white hover:shadow-2xl  border-b border-r">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/mdc/de4539ed75ea0a97a33dc51f1ed52fe8.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Antlets</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/25c43993d6424848139f5bfaf2f229f5.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>campaign</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/10cdec1242b3c0e82379698bbc9efc38.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Watch</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/d59d184b82da0b37606675ea36afe1a0.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Remote</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/ec064bfc531b12d46faf8041071a39cb.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Drones</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white  border-b border-r hover:shadow-2xl">
+                <div class="m-5">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/3b7ca6a16fa0b78cce5c49a541f0a27e.jpg_170x170q80.jpg_.webp"
+                        alt="" height="80px" width="120px">
+                    <div class="bg-white flex justify-center mt-3">
+                        <h1>Board Games</h1>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <h1 class="m-5 text-2xl">Just For You</h1>
+        <div class="bg-white">
+            <div class="flex justify-center test-1">
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/079e32814962d17333d8601d6c3eec2a.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>M3 Mini Metal Portable <br> Wireless Bluetooth</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/dff3f1aa70a6c0edb5fc094a3ac4d4a4.jpg_400x400q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>Lenovo Wireless Headsets <br> He05 Sport Earphones</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/d4791f861332c1129a070965de73406b.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            Multicolor Torch Jet <br> Windows Gas Lighter</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/af79351b3dfa5427ffac6055bbd44151.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            Daraz New Desing Soft & <br> Comfortable T-shirt</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/g/kf/Scf57ff8b217a4806b44078dd7eff51ccE.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>Pond’s Super Light Gel <br> Moisturiser 98g</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/6761820a537345c4c1dcf7ba473f8af6.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2 hover:shadow-2xl">
+                        <h1>High quality wafare <br> sunglass for Men</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="bg-white mt-5">
+            <div class="flex justify-center test-1">
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/g/kf/Se7afd8a606864684a77b5fe30d23f76cs.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>20cm Alloy Metal AIR <br> QATAR Airways Boeing</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/g/kf/Sbc69293394434044825c319568676a47z.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            Metal Camera Protector <br> for iPhone 15 Pro Max</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/034de41177edb5b24aeb44467710a47e.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+
+                            Premium Quality Long <br> Sleeve Design Shirt For
+                        </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/f0a2815562e84b28ca098280f5aa0008.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            LED Dream Mushroombr <br> Lamp - multi color</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/8cb950fd96c14f0cbe2ebd38353c3c64.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            New Led Desk Lamp <br> Nordic Cute Snail</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/d1d40200c378013ae14fee6c79ea660d.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2 hover:shadow-2xl">
+                        <h1>
+                            Arctic Hunter Backpack <br> Bag Waterproof &
+                        </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class=" bg-white mt-5">
+            <div class="flex justify-center test-1">
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/23aa39f9fa252e71b869a2f39b0aef40.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>Baby Silicone spoon <br> feeder Bottle...</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/g/kf/S45cf0f7f5381457b9fbdd2a93133e50du.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            Clothes Storage Bags <br> Foldable</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/g/kf/S1b3b4a1051a846f2a6cbb5adb1b539e1u.jpg_720x720q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+
+                            Men Ultra Thin PU <br> Leather Mini Small
+                        </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/2542a4f26a60958745408a3f02db8d0c.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            Flower Ladies Backpack <br> Embroidered
+                        </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/ac8feb43ee66430368894811797b8776.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            Dancing Cactus Talking <br> Cactus...</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href="">
+                        <img src="https://img.drz.lazcdn.com/static/bd/p/bbc2b0537bfbb4b42d3a9e4c133bf022.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            Happy Birthday <br> Decoration Com
+                        </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="bg-white mt-5">
+            <div class="flex justify-center test-1">
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/2a6238a54cbc025cfde2d83b6f719951.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>HD Stereo Wired <br> headphones with 3.5mm </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/g/kf/Se9462d315ffb406584c0c7f8ff172a74M.png_200x200q80.png_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+
+                            Kids Camera Digital Dual <br> Camera HD 1080P</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/e6e5f9bc26780e8d2e198c2d9ef70813.png_200x200q80.png_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+
+                            Home Decor 9pcs PVC <br> Calligraphy
+                        </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/ee6f0224e3eb569a224093e9385b7768.png_200x200q80.png_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            2 in 1 Floor Scrub Brush <br> | Floor Scrub Brush</h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/e59cd476aa3ad0e879c1c389848e3563.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            Revive Hairfall Fight <br> Shampoo 200 ml
+                        </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+                <div class="bg-white px-2 hover:shadow-2xl">
+                    <a href=""><img
+                            src="https://img.drz.lazcdn.com/static/bd/p/95d5a73ebcbeb81b6859037d630be17b.jpg_200x200q80.jpg_.webp"
+                            alt="" width="200px" height="150px"></a>
+                    <div class="p-2">
+                        <h1>
+                            High Quality Wifi Router <br> Stand Shelf
+                        </h1>
+                        <del class="text-red-500">৳ 329</del>
+                        <h5>৳ 699-53%</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-center m-8">
+            <button class="border-2 border-cyan-500 px-32 py-2 text-sky-500">LOAD MORE</button>
+        </div>
+
+
+
+        <section class="flex justify-evenly">
+           <div class="flex">
+            <div class="px-2">
+                <h1 class="my-3 bold text-xl">Customer Care</h1>
+                <ul>
+                    <li><a href="" class="text-xs text-slate-500">Help Center</a></li>
+                    <li><a href="" class="text-xs text-slate-500">How to Buy</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Returns & Refunds</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Contact Us</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Terms $ Conditions</a></li>
+                    <li><a href="" class="text-xs text-slate-500">CCMS - Central Complain Management System</a></li>
+                </ul>
+            </div>
+            <div class="px-2">
+                <h1 class="my-3 bold text-xl">E-Shop</h1>
+                <ul>
+                    <li><a href="" class="text-xs text-slate-500">About Daraz</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Digitals Payments</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Daraz Card</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Daraz Blog</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Daraz Cares</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Daraz Mart</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Privacy POlicy</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Daraz App</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Daraz Exclusives</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Daraz Donates</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Daraz University</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Sell on Daraz</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Code of Conduct</a></li>
+                    <li><a href="" class="text-xs text-slate-500">Join the Daraz Affiliate Program</a></li>
+                </ul>
+            </div>
+           </div>
+            <div class="flex justify-between items-center">
+                <div class="px-2">
+                    <img src="./images/images (1).png"
+                        alt="" height="20px" width="40px" class="rounded-full">
+                </div>
+            <div class="px-2">
+               <h1 class=" text-red-400">Happy Shopping</h1>
+               <h1 class="text-sm text-blue-500">Download App</h1>
+            </div>
+           <div class="flex">
+            <div class="px-3">
+                <img src="./images/images.jpeg-2.jpeg" alt="" height="20px" width="40px" class="rounded-full text-sm">
+            </div>
+            <div class="flex items-center">
+                <h1 class="text-lg text-blue-800">Shopping Now</h1>
+            </div>
+           </div>
+            </div>
+        </section>
+
+
+    </section>
+
+
+
+
+    <section class="mt-5 m-8">
+        <div class="m-3 px-8">
+            <h1>Payments Methods</h1>
+        </div>
+   <div class="flex">
+    <div class="px-8">
+        <div class="flex">
+            <div  class="px-2">
+             <img src="./images/download.jpeg-1.jpeg" alt="" height="20" width="50px">
+            </div>
+            <div  class="px-2">
+             <img src="./images/download.png-2.png" alt="" height="20" width="50px">
+            </div>
+            <div  class="px-2">
+             <img src="./images/download.jpeg" alt="" height="20" width="50px">
+            </div>
+            <div  class="px-2">
+             <img src="./images/rocket.png" alt="" height="20" width="50px">
+            </div>
+     </div>
+     <div class="flex mt-3">
+        <div class="px-2">
+            <img src="./images/nogad.png" alt="" height="20" width="50px">
+        </div>
+        <div class="px-2">
+            <img src="./images/American.png" alt="" height="20" width="50px">
+        </div>
+      </div>
+    </div>
+      <div class="px-8">
+        <h1 class="mb-3 text-red-900">Verified By</h1>
+        <div>
+            <img src="./images/online.png" alt="" height="20" width="50px" class="rounded-full">
+        </div>
+      </div>
+
+      <div class="px-8">
+        <h1 class="mb-3 text-red-900">DBID</h1>
+        <p class="text-gray-500 text-s8">Registration ID : <br>
+
+            304903094</p>
+      </div>
+   </div>
+    </section>
+
+
+
+
+    <section>
+        <div>
+            <div class="flex">
+                <div>
+                    <img src="./images/paki1.png" alt="" height="20px" width="50px" class="rounded-full p-2">
+                </div>
+                <h1 class="text-sm text-gray-400">Pakisthan</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
